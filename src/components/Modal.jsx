@@ -158,13 +158,17 @@ const Modal = ({
             </p>
             <p className="article__technologiesName">Technologie</p>
             <p className="article__technologiesContainer">
-              {projects[indexOfProject].technology.map((e) => {
-                return <span>{e}</span>;
+              {projects[indexOfProject].technology.map((e, index) => {
+                return <span key={index}>{e}</span>;
               })}
             </p>
             <div className="article__buttons">
-              {projects[indexOfProject].buttons.map((e) => {
-                return <a href={e.link}>{e.name}</a>;
+              {projects[indexOfProject].buttons.map((e, index) => {
+                return (
+                  <a key={index} href={e.link}>
+                    {e.name}
+                  </a>
+                );
               })}
             </div>
           </article>
