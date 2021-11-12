@@ -179,7 +179,6 @@ const Contact = () => {
               value={name}
               ref={inputNameRef}
               autoCorrect="off"
-              autoComplete={false}
             ></input>
             <span></span>
           </label>
@@ -193,7 +192,6 @@ const Contact = () => {
               value={email}
               ref={inputEmailRef}
               autoCorrect="off"
-              autoComplete={false}
             ></input>
             <span></span>
           </label>
@@ -207,7 +205,6 @@ const Contact = () => {
             value={message}
             ref={inputMessageRef}
             autoCorrect="off"
-            autoComplete={false}
           ></textarea>
           <span></span>
         </label>
