@@ -1,0 +1,183 @@
+.portfolio {
+    text-align: center;
+    padding: 50px 0px;
+    background: black;
+    & >h2 {
+        font-weight: 800;
+        text-align: center;
+        color: #08fdd8;
+        font-size: 2rem;
+        opacity:0;
+    }
+    &__buttons {
+        position: relative;
+        display:inline-flex;
+        justify-content: center;
+        list-style: none;
+        margin-top: 70px;
+        &>li {
+            margin: 0px 25px;
+            padding: 0px 40px;
+            color: #616161;
+            transition: 0.6s color;
+            z-index:1;
+            &>button {
+                background: none;
+                outline:none;
+                border:none;
+                font-family: "Raleway";
+                font-size: 1.1rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor:pointer;
+                color: inherit;
+                letter-spacing: 0.5px;
+            }
+        }
+        @media (max-width: 800px) {
+            &>li {
+                padding: 0px 20px;
+            }
+        }
+        @media (max-width: 620px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__main {
+        max-width:1270px;
+        padding: 0px 10px;
+        margin:30px auto;
+    }
+    &__project {
+        width:100%;
+        max-width:390px;
+        height: 300px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__projects {
+        margin:0 auto;
+        overflow:hidden;
+        transform: scale(0);
+        transition: 1s;
+        @media (max-width:800px) {
+            width:100% !important;
+            max-width:390px;
+        }
+    }
+}
+
+.visible { 
+    transform: scale(1) !important;
+}
+
+.project {
+    overflow: hidden;
+    &:hover> .project__container> .project__image {
+        opacity:0.1;
+    }
+    &:hover> .project__container> .project__name, &:hover> .project__container> .project__button {
+        transform: translateY(0%);
+        opacity:1;
+    }
+    &__container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width:100%;
+        height:100%;
+    }
+    &__image {
+        position:absolute;
+        width: 100%;
+        height:100%;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        transition:0.6s opacity;
+    }
+    &__name {
+        transform: translateY(-20px);
+        opacity:0;
+        z-index:1;
+        transition: 0.6s transform, 0.4s opacity;
+        &>h3 {
+            color:White;
+            padding: 0px 10px;
+        }
+        &>p {
+            font-size: 0.9rem;
+            color: #adacac;
+            letter-spacing: 0.3px;
+        }
+    }
+    &__button {
+        transition: 0.6s transform, 0.4s opacity;
+        transform: translateY(20px);
+        opacity:0;
+        &>button {
+            position: relative;
+            height: 45px;
+            color: #08fdd8;
+            background: none;
+            border: 1px solid #08fdd8;
+            outline: 0;
+            letter-spacing: 2px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0px  20px;
+        }
+    }
+}
+
+.whitefont {
+    color: white !important;
+}
+
+.activeElement {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100px;
+    background: #666666;
+    border-radius: 1px;
+    height:30px;
+    transition: 0.7s;
+}
+
+.project1 {
+    & .project__image {
+        background: url('../../public/assets/chatt.png');
+    }
+}
+.project2 {
+    & .project__image {
+        background-image: url('../../public/assets/manageworkers.png');
+    }
+}
+.project3 {
+    & .project__image {
+        background-image: url('../../public/assets/todo.png');
+    }
+}
+.project4 {
+    & .project__image {
+        background-image: url('../../public/assets/saper.png');
+    }
+}
+.project5 {
+    & .project__image {
+        background-image: url('../../public/assets/portfolio.png');
+    }
+}
+.project6 {
+    & .project__image {
+        background-image: url('../../public/assets/tenis.png');
+    }
+}
