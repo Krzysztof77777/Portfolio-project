@@ -119,34 +119,32 @@ const Header = () => {
             </ul>
           </div>
         </nav>
-        <nav className="header__navigationcontact navigationcontact">
-          <ul className="navigationcontact__elements">
-            <li className="navigationcontact__element">
-              <a
-                className="fab fa-facebook-f"
-                href="https://www.facebook.com/krzysztof.sluzewski"
-              ></a>
-            </li>
-            <li className="navigationcontact__element">
-              <a
-                className="fab fa-github"
-                href="https://github.com/Krzysztof77777"
-              ></a>
-            </li>
-            <li className="navigationcontact__element">
-              <a
-                className="fab fa-linkedin-in"
-                href="https://www.linkedin.com/in/krzysztof-sluzewski-868930225"
-              ></a>
-            </li>
-            <li className="navigationcontact__element">
-              <a
-                className="fab fa-codepen"
-                href="https://codepen.io/Krzysztof77777"
-              ></a>
-            </li>
-          </ul>
-        </nav>
+        <ul className="navigationcontact">
+          <li className="navigationcontact__element">
+            <a
+              className="fab fa-facebook-f"
+              href="https://www.facebook.com/krzysztof.sluzewski"
+            ></a>
+          </li>
+          <li className="navigationcontact__element">
+            <a
+              className="fab fa-github"
+              href="https://github.com/Krzysztof77777"
+            ></a>
+          </li>
+          <li className="navigationcontact__element">
+            <a
+              className="fab fa-linkedin-in"
+              href="https://www.linkedin.com/in/krzysztof-sluzewski-868930225"
+            ></a>
+          </li>
+          <li className="navigationcontact__element">
+            <a
+              className="fab fa-codepen"
+              href="https://codepen.io/Krzysztof77777"
+            ></a>
+          </li>
+        </ul>
         <div ref={headerMainRef} className="header__main">
           <p>ABOUT ME AS A FUTURE PROFESSIONAL</p>
           <h1>
